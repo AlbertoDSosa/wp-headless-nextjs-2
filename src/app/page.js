@@ -8,7 +8,7 @@ export default async function HomePage() {
   return (
     <div className="bg-white">
       <SessionWrapper session={session}>
-        <Header auth={!!session?.user} />
+        <Header />
       </SessionWrapper>
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div
