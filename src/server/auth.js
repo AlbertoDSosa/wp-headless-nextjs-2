@@ -10,7 +10,7 @@ export const authOptions = {
 
       async authorize(credentials) {
         // console.log('credentials:server', credentials);
-        return wpAuth(credentials);
+        return await wpAuth(credentials);
       },
     }),
   ],

@@ -18,6 +18,8 @@ export default function Signin({ csrfToken }) {
     }).then((res) => {
       if (res.ok) {
         router.push('/dashboard');
+      } else {
+        console.log('credentials-error', res);
       }
     });
   };
